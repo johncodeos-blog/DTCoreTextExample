@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,9 +12,13 @@
 		A1ADA1CD22DE1B4000BC7EBB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1ADA1CB22DE1B4000BC7EBB /* Main.storyboard */; };
 		A1ADA1CF22DE1B4100BC7EBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1ADA1CE22DE1B4100BC7EBB /* Assets.xcassets */; };
 		A1ADA1D222DE1B4100BC7EBB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1ADA1D022DE1B4100BC7EBB /* LaunchScreen.storyboard */; };
+		AEC5036DF041A987DB344F29 /* Pods_DTCoreTextExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DC0D34B20E72A69419E39DB /* Pods_DTCoreTextExample.framework */; };
+		C26949F222DE2F6800702AED /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26949F122DE2F6800702AED /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		12623C59BB1C918BC0FFBAB9 /* Pods-DTCoreTextExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DTCoreTextExample.release.xcconfig"; path = "Target Support Files/Pods-DTCoreTextExample/Pods-DTCoreTextExample.release.xcconfig"; sourceTree = "<group>"; };
+		4DC0D34B20E72A69419E39DB /* Pods_DTCoreTextExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DTCoreTextExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1ADA1C422DE1B4000BC7EBB /* DTCoreTextExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DTCoreTextExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1ADA1C722DE1B4000BC7EBB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A1ADA1C922DE1B4000BC7EBB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +26,8 @@
 		A1ADA1CE22DE1B4100BC7EBB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A1ADA1D122DE1B4100BC7EBB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A1ADA1D322DE1B4100BC7EBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C26949F122DE2F6800702AED /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		FF3EF0A61FA4B985D6C52B73 /* Pods-DTCoreTextExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DTCoreTextExample.debug.xcconfig"; path = "Target Support Files/Pods-DTCoreTextExample/Pods-DTCoreTextExample.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AEC5036DF041A987DB344F29 /* Pods_DTCoreTextExample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		41B10F74D3F9AA22329E929B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FF3EF0A61FA4B985D6C52B73 /* Pods-DTCoreTextExample.debug.xcconfig */,
+				12623C59BB1C918BC0FFBAB9 /* Pods-DTCoreTextExample.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		99706EDA147E1920C1B94C07 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4DC0D34B20E72A69419E39DB /* Pods_DTCoreTextExample.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A1ADA1BB22DE1B4000BC7EBB = {
 			isa = PBXGroup;
 			children = (
 				A1ADA1C622DE1B4000BC7EBB /* DTCoreTextExample */,
 				A1ADA1C522DE1B4000BC7EBB /* Products */,
+				41B10F74D3F9AA22329E929B /* Pods */,
+				99706EDA147E1920C1B94C07 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,6 +86,7 @@
 				A1ADA1CE22DE1B4100BC7EBB /* Assets.xcassets */,
 				A1ADA1D022DE1B4100BC7EBB /* LaunchScreen.storyboard */,
 				A1ADA1D322DE1B4100BC7EBB /* Info.plist */,
+				C26949F122DE2F6800702AED /* Extensions.swift */,
 			);
 			path = DTCoreTextExample;
 			sourceTree = "<group>";
@@ -71,9 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A1ADA1D622DE1B4100BC7EBB /* Build configuration list for PBXNativeTarget "DTCoreTextExample" */;
 			buildPhases = (
+				1385488C196B2CDD6C074E7A /* [CP] Check Pods Manifest.lock */,
 				A1ADA1C022DE1B4000BC7EBB /* Sources */,
 				A1ADA1C122DE1B4000BC7EBB /* Frameworks */,
 				A1ADA1C222DE1B4000BC7EBB /* Resources */,
+				9E384FC47C9E82ED6BCA93C4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,12 +159,55 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1385488C196B2CDD6C074E7A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DTCoreTextExample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9E384FC47C9E82ED6BCA93C4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DTCoreTextExample/Pods-DTCoreTextExample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DTCoreTextExample/Pods-DTCoreTextExample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DTCoreTextExample/Pods-DTCoreTextExample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A1ADA1C022DE1B4000BC7EBB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				A1ADA1CA22DE1B4000BC7EBB /* ViewController.swift in Sources */,
+				C26949F222DE2F6800702AED /* Extensions.swift in Sources */,
 				A1ADA1C822DE1B4000BC7EBB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,9 +352,11 @@
 		};
 		A1ADA1D722DE1B4100BC7EBB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF3EF0A61FA4B985D6C52B73 /* Pods-DTCoreTextExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6P8Q9Q6J62;
 				INFOPLIST_FILE = DTCoreTextExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -297,9 +371,11 @@
 		};
 		A1ADA1D822DE1B4100BC7EBB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 12623C59BB1C918BC0FFBAB9 /* Pods-DTCoreTextExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6P8Q9Q6J62;
 				INFOPLIST_FILE = DTCoreTextExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
