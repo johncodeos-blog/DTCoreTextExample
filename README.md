@@ -1,5 +1,5 @@
 ![logo](https://i.imgur.com/Dv73hCk.png)
 # DTCoreTextExample
-Display HTML in UITextView/UILabel with custom color, font, etc. with the DTCoreText library using Swift
+How to display HTML with DTCoreText in UITextView/UILabel with custom color, font, etc. in iOS using Swift
 
-https://johncodeos.com/display-html-in-uitextview-uilabel-with-custom-color-font-etc-with-the-dtcoretext-library-using-swift
+https://johncodeos.com/how-to-display-html-with-dtcoretext-in-uitextview-uilabel-with-custom-color-font-etc-in-ios-using-swift
